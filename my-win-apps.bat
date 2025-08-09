@@ -53,9 +53,10 @@ protonvpn
 :: Install applications
 FOR %%A IN (%APPS%) DO (
     echo Installing %%A...
-    choco install %%A -y --ignore-checksums
+    choco install %%A -y
 )
 
 echo.
 echo All applications have been installed.
 pause
+
